@@ -1,0 +1,15 @@
+{
+  "packageManager": "yarn@3.1.1",
+  "name": "parcel-reporter-ip-workspace",
+  "private": true,
+  "workspaces": [
+    "example",
+    "parcel-reporter-ip"
+  ],
+  "scripts": {
+    "watch": "yarn run --cwd parcel-reporter-ip watch",
+    "start": "yarn run --cwd example start",
+    "prettier": "yarn run --cwd parcel-reporter-ip prettier",
+    "prettier:check": "yarn run --cwd parcel-reporter-ip prettier:check",
+    "lint": "yarn run --cwd parcel-reporter-ip lint"  }
+}

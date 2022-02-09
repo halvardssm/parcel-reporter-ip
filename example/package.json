@@ -1,0 +1,15 @@
+{
+  "packageManager": "yarn@3.1.1",
+  "name": "@halvardm/parcel-reporter-ip-example",
+  "type": "module",
+  "scripts": {
+    "start": "parcel serve --port 3000 index.html"
+  },
+  "dependencies": {
+    "@halvardm/parcel-reporter-ip": "workspace:*"
+  },
+  "devDependencies": {
+    "@parcel/config-default": "^2.2.1",
+    "parcel": "^2.2.1"
+  }
+}
