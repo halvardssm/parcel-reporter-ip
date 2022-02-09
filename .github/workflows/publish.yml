@@ -27,3 +27,4 @@ jobs:
         with:
           token: ${{ secrets.NPM_TOKEN }}
           access: public
+          package: ./parcel-reporter-ip/package.json
