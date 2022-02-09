@@ -13,4 +13,5 @@ jobs:
       - name: Create Release
         uses: halvardssm/github-action-tag-release@1.0.0
         with: 
+          token: ${{ secrets.GITHUB_TOKEN }}
           path: './parcel-reporter-ip/package.json' # optional, will use ./package.json by default
