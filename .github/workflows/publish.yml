@@ -22,4 +22,4 @@ jobs:
       - name: Yarn Install
         run: yarn --immutable
       - name: Publish
-        run: yarn npm publish
+        run: yarn --cwd ./parcel-reporter-ip npm publish
