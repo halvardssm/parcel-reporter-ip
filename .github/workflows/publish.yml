@@ -21,5 +21,9 @@ jobs:
           yarn config set npmScopes.journee-live.npmPublishRegistry "https://npm.pkg.github.com"
       - name: Yarn Install
         run: yarn --immutable
-      - name: Publish
-        run: yarn --cwd ./parcel-reporter-ip npm publish
+      # - name: Publish
+      #   run: yarn --cwd ./parcel-reporter-ip npm publish
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          access: public
